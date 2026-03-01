@@ -1,0 +1,12 @@
+[package]
+name = "vmm-demo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+kvm-ioctls = "0.19"
+kvm-bindings = { version = "0.10", features = ["fam-wrappers"] }
+vm-memory = { version = "0.15", features = ["backend-mmap"] }
+vmm-sys-util = "0.12"
+linux-loader = { version = "0.12", features = ["bzimage"] }
+libc = "0.2"
